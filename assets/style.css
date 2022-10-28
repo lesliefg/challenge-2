@@ -1,0 +1,92 @@
+:root {
+    --pink: rgb(168, 55, 168);
+    --white: #EEEEEE;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 16px;
+    color: white;
+    background-color: #2A262A;
+  }
+
+header {
+    display: block;
+    clear: both;
+    width: 100%;
+    bottom: 0;
+    padding: 30px;
+    text-align: center;
+    position: relative;
+    margin-top: 0px;
+}
+
+header h1 {
+    color: var(--pink);
+    font-size: 250%;
+}
+
+header p {
+    color: var(--white);
+    font-size: 90%;
+}
+
+section {
+    border-style: dashed;
+    border-width: 3px;
+    padding: 15px;
+    margin: 25px;
+    float: left;
+    width: 30%
+}
+
+#title {
+    position: relative;
+    top: -35px;
+    border-style: solid;
+    border-color: #EEEEEE;
+    padding: 5px;
+    border-radius: 10px;
+    font-size: 150%;
+    color: var(--pink);
+    background-color: #2A262A;
+    text-align: left;
+}
+
+.box p {
+    color: var(--pink);
+}
+
+#example {
+    color: var(--white);
+}
+
+.footer {
+    display: block;
+    clear: both;
+    width: 100%;
+    bottom: 0;
+    padding: 30px;
+    text-align: center;
+    color: var(--pink);
+    position: relative;
+    margin-bottom: 0px;
+}
+
+@media screen and (max-width: 992px) {
+    section {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    section {
+        width: 80%;
+    }
+    
+}
