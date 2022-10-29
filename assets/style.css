@@ -71,16 +71,48 @@ rows, height and fill the page equally*/
 /*This styles our container descriptions/instructions*/
 .box #desc {
     color: var(--pink);
+    margin-top:-20px;
 }
 /*This styles our containers example text box*/
 .box ul {
+    position: relative;
+    bottom: 0px;
+    height: 50% 75%;
     color: var(--light);
     margin: 10px;
-    border-radius: 20px;
+    border-radius: 10px;
     background-image: linear-gradient(
               rgba(232, 102, 236, 0.3) 0%,
               rgba(232, 102, 236, 0.6) 100%);
 }
+/*This will highlight the example text of you the code you are hovering over*/
+/*.container section #title, .container section, .box {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.container section:hover, .container section #title:hover, .box:hover  {
+box-shadow: inset 0px 0px 8px
+rgba(232, 102, 236, 1), 0 0 15px
+rgba(232, 102, 236, 1);
+}*/
+
+.section, .section #title {
+    border-radius: 8px;
+    transition: all 0.5s ease-in-out;
+}
+
+.section:hover, .section #title:hover {
+box-shadow: inset 0px 0px 8px
+rgba(232, 102, 236, 1), 0 0 15px
+rgba(232, 102, 236, 1);
+}
+
+.box ul:hover {
+    background: rgb(138, 196, 138);
+    transition: all 1s ease-in-out;
+  }
+
 /*This styles our container example text*/
 .box li {
     list-style-type: none;
