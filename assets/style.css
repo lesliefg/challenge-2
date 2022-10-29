@@ -1,18 +1,16 @@
+/*This is our root colors*/
 :root {
     --pink: rgb(168, 55, 168);
-    --white: #EEEEEE;
+    --light: #EEEEEE;
+    --dark: #2e2d2e;
 }
 
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
+/*This is our basic webpage elements*/
 body {
-    font-size: 16px;
-    color: white;
-    background-color: #2A262A;
+    font-size: 16px; /*webpage font size*/
+    font-family: 'Cascadia Code'; /*webpage font*/
+    color: var(--light); /*webpage main color*/
+    background-color: var(--dark);
   }
 
 header {
@@ -29,6 +27,7 @@ header {
 header h1 {
     color: var(--pink);
     font-size: 250%;
+    font-weight: bolder;
 }
 
 header p {
@@ -36,35 +35,65 @@ header p {
     font-size: 90%;
 }
 
-section {
-    border-style: dashed;
-    border-width: 3px;
-    padding: 15px;
-    margin: 25px;
-    float: left;
-    width: 30%
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: center;
+}
+
+.container section {
+    width: 500px;
+    min-height: 100px;
+    max-height: 600px;
+    margin: 30px;
+    border: 3px dashed var(--light);
+    background-color: transparent;
 }
 
 #title {
     position: relative;
-    top: -35px;
+    top: -30px;
+    width: 90%;
+    margin-left: 15px;
     border-style: solid;
-    border-color: #EEEEEE;
+    border-color: var(--light);
     padding: 5px;
     border-radius: 10px;
     font-size: 150%;
+    font-weight: bolder;
     color: var(--pink);
-    background-color: #2A262A;
+    background-color: var(--dark);
     text-align: left;
 }
 
-.box p {
+.box #desc {
     color: var(--pink);
 }
 
-#example {
-    color: var(--white);
+.box ul {
+    color: var(--light);
+    margin: 10px;
+    border-radius: 20px;
+    background-image: linear-gradient(
+              rgba(232, 102, 236, 0.3) 0%,
+              rgba(232, 102, 236, 0.6) 100%);
 }
+
+.box li {
+    list-style-type: none;
+}
+
+.box li:nth-child(n+2):nth-last-child(n+2) {
+    margin-left: 25px;
+}
+
+#color {
+    color: var(--white);
+    text-indent: 20px;
+}
+
 
 .footer {
     display: block;
@@ -79,14 +108,12 @@ section {
 }
 
 @media screen and (max-width: 992px) {
-    section {
+    .container section {
         width: 40%;
     }
 }
 
 @media screen and (max-width: 768px) {
-    section {
-        width: 80%;
+    .container section {
+        width: 100%;
     }
-    
-}

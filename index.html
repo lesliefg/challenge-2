@@ -19,78 +19,96 @@
         you to copy.</p>
     </header>
 
+    <container class="container">
+
     <section class="section">
+        <header id="title">Flexbox Row</header>
         <box class="box">
-            <header id="title">Flexbox Row</header>
-            <p>Desc</p>
-            <p id="example">.row { <br>
-              display: flex; <br>
-              flex -direction: row;<br>
-              flex-wrap: wrap;<br>
-            }</p>
+            <p id="desc">Use these three properties to create a Flexbox row layout.</p>
+            <ul>
+                <li>.row {</li>
+                <li>display: flex;</li>
+                <li>flex -direction: row;</li>
+                <li>flex-wrap: wrap;</li>
+                <li>}</li>
+            </ul>
+        </box>
+    </section>
+
+    <section class="section">
+        <header id="title">Flexbox Column</header>
+        <box class="box">
+            <p id="desc">Use this to create a Flexbox column layout.</p>
+            <ul>
+                <li>.column {</li>
+                <li>display: flex;</li>
+                <li>flex-direction: column;</li>
+                <li>}</li>
+            </ul>
         </box>
     </section>
 
     <section class="section">
         <box class="box">
-            <header id="title">Flexbox Column</header>
-            <p>Desc</p>
-            <p id="example">.row { <br>
-              display: flex; <br>
-              flex -direction: row;<br>
-              flex-wrap: wrap;<br>
-            }</p>
-        </box>
-    </section>
-
-    <section class="section">
-        <box class="box">
-            <header id="title">Css Grid Layout</header>
-            <p>Desc</p>
-            <p id="example">.row { <br>
-              display: flex; <br>
-              flex -direction: row;<br>
-              flex-wrap: wrap;<br>
-            }</p>
+            <header id="title">CSS Grid Layout</header>
+            <p id="desc">Build a 12-column layout using CSS Grid.</p>
+            <ul>
+                <li>.grid {</li>
+                <li>display: grid;</li>
+                <li>width: 100%;</li>
+                <li>grid-template-columns: repeat(12, 1fr);</li>
+                <li>}</li>
+            </ul>
         </box>
     </section>
 
     <section class="section">
         <box class="box">
             <header id="title">Linear Gradients</header>
-            <p>Desc</p>
-            <p id="example">.row { <br>
-              display: flex; <br>
-              flex -direction: row;<br>
-              flex-wrap: wrap;<br>
-            }</p>
+            <p id="desc">This will create a background linear gradient from top to bottom.</p>
+            <ul>
+                <li>.linear-gradient-background {</li>
+                <li>background-image: linear-gradient ( </li>
+                <li id="color">rgba(232, 102, 236, 0.3) 0%.</li>
+                <li id="color">rgba(232, 102, 236, 0.6) 100%. );</li>
+                <li>}</li>
+            </ul>
         </box>
     </section>
 
     <section class="section">
         <box class="box">
             <header id="title">Box Transition Glow</header>
-            <p>Desc</p>
-            <p id="example">.row { <br>
-              display: flex; <br>
-              flex -direction: row;<br>
-              flex-wrap: wrap;<br>
-            }</p>
+            <p id="desc">Use transition and box shadows to glow on hover.</p>
+            <ul>
+                <li>.code-card .card-header { </li>
+                <li>border-radius: 8px; </li>
+                <li>transition: all 0.5s ease-in-out;</li>
+                <li>}</li>
+                <br>
+                <li>.code-card:hover</li>
+                <li>.code-card:hover .card-header {</li>
+                <li>box-shadow: inset 0px 0px 8px </li>
+                <li>rgba(232, 102, 236, 1), 0 0 15px</li>
+                <li>rgba(232, 102, 236, 1);</li>
+                <li>}</li>
+            </ul>
         </box>
     </section>
 
     <section class="section">
         <box class="box">
             <header id="title">Overlay Card with Title</header>
-            <p>Desc</p>
-            <p id="example">.row { <br>
-              display: flex; <br>
-              flex -direction: row;<br>
-              flex-wrap: wrap;<br>
-            }</p>
+            <p id="desc">Use position properties and negative margins to raise elements higher than their natural starting point.s</p>
+            <ul>
+                <li>.card-header {</li>
+                <li>position: relative; </li>
+                <li>margin-top: -20px;</li>
+                <li>}</li>
+            </ul>
         </box>
     </section>
-
+</main>
 <!--This is the footer/website credit-->
     <footer class="footer">
         <h2>Made with ❤️️ and CSS</h2>
