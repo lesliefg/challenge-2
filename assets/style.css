@@ -10,9 +10,9 @@ body {
     font-size: 16px; /*webpage font size*/
     font-family: 'Cascadia Code'; /*webpage font*/
     color: var(--light); /*webpage main color*/
-    background-color: var(--dark);
+    background-color: var(--dark); /*webpage background color*/
   }
-
+/*This styles the header*/
 header {
     display: block;
     clear: both;
@@ -23,18 +23,19 @@ header {
     position: relative;
     margin-top: 0px;
 }
-
+/*This styles the header Title*/
 header h1 {
     color: var(--pink);
     font-size: 250%;
     font-weight: bolder;
 }
-
+/*This styles the header description*/
 header p {
     color: var(--white);
     font-size: 90%;
 }
-
+/*This places our containers and allows them to flew in 
+rows, height and fill the page equally*/
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -42,7 +43,7 @@ header p {
     align-items: stretch;
     align-content: center;
 }
-
+/*This styles our containers borders, color and size*/
 .container section {
     width: 500px;
     min-height: 100px;
@@ -51,7 +52,7 @@ header p {
     border: 3px dashed var(--light);
     background-color: transparent;
 }
-
+/*This styles our containers titles*/
 #title {
     position: relative;
     top: -30px;
@@ -67,11 +68,11 @@ header p {
     background-color: var(--dark);
     text-align: left;
 }
-
+/*This styles our container descriptions/instructions*/
 .box #desc {
     color: var(--pink);
 }
-
+/*This styles our containers example text box*/
 .box ul {
     color: var(--light);
     margin: 10px;
@@ -80,21 +81,20 @@ header p {
               rgba(232, 102, 236, 0.3) 0%,
               rgba(232, 102, 236, 0.6) 100%);
 }
-
+/*This styles our container example text*/
 .box li {
     list-style-type: none;
 }
-
+/*This indents our example text except for the first and last list items*/
 .box li:nth-child(n+2):nth-last-child(n+2) {
     margin-left: 25px;
 }
-
+/*This indents our color codes for container 4 in the example text*/
 #color {
     color: var(--white);
     text-indent: 20px;
 }
-
-
+/*This is our footer/credits */
 .footer {
     display: block;
     clear: both;
@@ -106,7 +106,7 @@ header p {
     position: relative;
     margin-bottom: 0px;
 }
-
+/*The below two sections will resize the containers to fit different screens*/
 @media screen and (max-width: 992px) {
     .container section {
         width: 40%;
@@ -117,3 +117,4 @@ header p {
     .container section {
         width: 100%;
     }
+}
